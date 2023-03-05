@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Testimonial</title>
+    <link rel="stylesheet" href="ASSETS/CSS/testimonial.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<body>
+    <nav>
+        <div class="left-nav">
+            <img src="ASSETS/IMG/mariobox.png" width="55" height="45" alt="icon">
+            <ul>
+                <li class="item-collapse">
+                    <a href="index.html">Home</a>
+                  </li>
+                 <li class="item-collapse">
+                    <a href="project.html">The Project</a>
+                  </li>
+                  <li class="item-collapse">
+                    <a href="testimonial.html" class="active">Testimonial</a>
+                  </li>
+            </ul>
+        </div>
+
+        <div class="right-nav item-collapse">
+            <a href="contact.html">Contact</a>
+        </div>
+        <div id="barsmenu" style="margin-right: 10px;">
+            <button style="background-color: transparent; border: none; cursor: pointer;" onclick="openHamburger()">
+               <i class="fa-2x fa-solid fa-bars"></i>
+           </button>
+        </div>
+    </nav>
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+        <div><a href="index.html">Home</a></div>
+        <div><a href="project.html">The project</a></div>
+        <div><a href="testimonial.html" class="hamburger-active">Testimonial</a></div>
+        <div><a href="contact.html">Contact</a></div>
+    </div>
+
+    <div class="container">
+        <h1>My Testimonials</h1>
+        <div class="container-rating">
+            <h2> Rating By Star</h2>
+            <div class="rating">
+                <button class="rating-btn" onclick="getAllTestimonials()">
+                    All
+                </button>
+                <button class="rating-btn" onclick="getFilteredTestimonials(1)">
+                    1 <i class="fa-solid fa-star"></i>
+                </button>
+                <button class="rating-btn" onclick="getFilteredTestimonials(2)">
+                    2 <i class="fa-solid fa-star"></i>
+                </button>
+                <button class="rating-btn" onclick="getFilteredTestimonials(3)">
+                    3 <i class="fa-solid fa-star"></i>
+                </button>
+                <button class="rating-btn" onclick="getFilteredTestimonials(4)">
+                    4 <i class="fa-solid fa-star"></i>
+                </button>
+                <button class="rating-btn" onclick="getFilteredTestimonials(5)">
+                    5 <i class="fa-solid fa-star"></i>
+                </button>
+            </div>
+        </div>
+        <section class="testimonials" id="testimonials">
+           
+        </section>
+    </div>
+    <script src="ASSETS/JS/index.js"></script>
+    <script src="ASSETS/JS/ajax.js"></script>
+</body>
+
+</html>

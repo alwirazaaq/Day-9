@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+.left-nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3f3f3;
+    padding: 25px 50px;
+    height: 20px;
+}
+
+.left-nav {
+    display: flex;
+    align-items: center;
+}
+ul {
+    display: flex;
+    list-style: none;
+    margin-left: 50px;
+}
+li {
+    margin-right: 50px;
+    font-weight: 600;
+}
+.right-nav button{
+    font-size: 15px;
+    padding: 10px 20px; 
+    border-radius: 5px;
+    color: white;
+    background-color: gray;
+    border: none;
+}
+
+.container {
+    width: 400px;
+    margin: 20px auto;
+}
+.container h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 50px;
+    font-weight: bolder;
+}
+input,select,textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    font-size: 18px;
+    color: black;
+    resize: vertical;
+    outline: none;
+
+}
+label{
+    font-weight: 700;
+    text-transform: capitalize;
+}
+form {
+    display: block;
+}
+#button {
+    text-align: right;
+    margin-top: 20px;
+}
+#button button{
+    padding: 6px 28px;
+    border-radius: 14px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    background-color: black;
+    cursor: pointer;
+}
+
+.hamburger-nav-container {
+    font-size: 23px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .hamburger-nav-container .hamburger-active {
+    background-color: orangered;
+  }
+  
+  .hamburger-nav-container a {
+    color: white;
+    background-color: #9a9a9a;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #fff;
+  }
+  
+  #barsmenu {
+    display: block;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .container {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #barsmenu {
+        display: block;
+    }
+
+
+    .item-collapse {
+        display: none;
+    }
+
+    .hamburger {
+        flex: 1;
+        display: flex;
+        margin-right: 30px;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}

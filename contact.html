@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="ASSETS/CSS/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="left-nav">
+            <img src="ASSETS/IMG/mariobox.png" width="55" height="45" alt="icon">
+            <ul>
+                <li class="item-collapse">
+                    <a href="index.html">Home</a>
+                  </li>
+                 <li class="item-collapse">
+                    <a href="project.html">The Project</a>
+                  </li>
+                  <li class="item-collapse">
+                    <a href="testimonial.html">Testimonial</a>
+                  </li>
+            </ul>
+        </div>
+
+        <div class="right-nav item-collapse">
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+        <div id="barsmenu" style="margin-right: 10px;">
+            <button style="background-color: transparent; border: none; cursor: pointer;" onclick="openHamburger()">
+               <i class="fa-2x fa-solid fa-bars"></i>
+           </button>
+        </div>
+    </nav>
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+        <div><a href="index.html">Home</a></div>
+        <div><a href="project.html">The project</a></div>
+        <div><a href="testimonial.html">Testimonial</a></div>
+        <div><a href="contact.html" class="hamburger-active">Contact</a></div>
+    </div>
+    <div class="container">
+        <h2>Get in touch</h2>
+        <form >
+            <label for="name">name</label>
+            <input type="text" id="name">
+
+            <label for="email">email</label>
+            <input type="text" id="email">
+
+            <label for="phoneNumber">phone number</label>
+            <input type="text" id="phoneNumber">
+
+            <label for="subject">subject</label>
+            <select id="subject">
+                <option disabled selected></option>
+                <option>Johnny Cage</option>
+                <option>Jax Briggs</option>
+                <option>Sonya Blade</option>
+                <option>Scorpion</option>
+                <option>Sub-Zero</option>
+                <option>Raiden</option>
+                <option>Liu Kang</option>
+                <option>Kung Lao</option>
+                <option>Shang Tsung</option>
+            </select>
+
+            <label for="message">your message</label>
+            <textarea id="message" cols="30" rows="10"></textarea>
+        </form>
+        <div id="button">
+            <button type="button" onclick="getData()">Sumbit</button>
+        </div>
+    </div>
+    
+</body>
+<script src="ASSETS/JS/script.js"></script>
+<script src="ASSETS/JS/index.js"></script>
+</html>

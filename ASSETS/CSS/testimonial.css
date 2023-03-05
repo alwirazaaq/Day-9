@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3f3f3;
+    padding: 25px 10px;
+    height: 20px;
+}
+
+.left-nav {
+    display: flex;
+    align-items: center;
+}
+ul {
+    display: flex;
+    list-style: none;
+    margin-left: 50px;
+}
+li {
+    margin-right: 50px;
+    font-weight: 600;
+}
+
+.right-nav button{
+    font-size: 15px;
+    padding: 30px 20px; 
+    border-radius: 5px;
+    color: white;
+    background-color: gray;
+    border: none;
+}
+.right-nav a button {
+    cursor: pointer;
+}
+
+.hamburger-nav-container {
+    font-size: 23px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .hamburger-nav-container .hamburger-active {
+    background-color: orangered;
+  }
+  
+  .hamburger-nav-container a {
+    color: white;
+    background-color: #9a9a9a;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #fff;
+  }
+  
+  #barsmenu {
+    display: block;
+}
+
+.container {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.testimonial {
+    width: 25%;
+    margin: 0px 15px 30px 15px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.quote {
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.author {
+    font-weight: bold;
+    text-align: right;
+}
+
+.profile-testimonial {
+    width: 100%;
+}
+
+.container-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-rating {
+    display: flex;
+}
+
+
+.rating-btn {
+    margin: 20px;
+    padding: 0px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: orangered;
+    color: white;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .testimonial {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .testimonial {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #barsmenu {
+        display: block;
+    }
+
+
+    .item-collapse {
+        display: none;
+    }
+
+    .hamburger {
+        flex: 1;
+        display: flex;
+        margin-right: 30px;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
